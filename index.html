@@ -11,8 +11,9 @@
   
   <script src="https://apis.google.com/js/api.js"></script>
   <script>
-    const CLIENT_ID = "CLIENT_ID"; // Substitua pelo seu Client ID
-    const API_KEY = "API_KEY"; // Substitua pela sua API Key
+    const CLIENT_ID = process.env.CLIENT_ID; // Carregado da Vercel
+    const API_KEY = process.env.API_KEY; // Carregado da Vercel
+
     const DISCOVERY_DOCS = [
       "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"
     ];
